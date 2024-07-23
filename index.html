@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="icon" href="./assets/img/favicon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/base.css">
+    <script src="https://kit.fontawesome.com/e4f7b1c3b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="dashboard">
+            <header class="dashboard__header">
+                <h4>Now playing:</h4>
+                <h2 class="dashboard__name-song">Name song</h2>
+            </header>
+            <div class="cd">
+                <div class="cd__thumb"
+                    style="background-image: url('https://img.docbao.vn/images/uploads/2019/07/11/gia-dinh/mat-biec-5.png');">
+                </div>
+            </div>
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fa-solid fa-backward-step"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fa-solid fa-play icon-play"></i>
+                    <i class="fa-solid fa-pause icon-pause"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
+                <div class="btn-box">
+                    <div class="btn btn-random">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                    <div class="volume-box">
+                        <i class="fa-solid fa-volume-high icon-volume"></i>
+                        <input type="range" id="volume" class="volume" value="0" step="10" min="0" max="100" id="">
+                    </div>
+                </div>
+            </div>
+            <input type="range" id="progress" class="progress" value="0" step="1" min="0" max="100">
+            <audio id="audio" src=""></audio>
+
+        </div>
+        <div class="playlist">
+            <div class="song">
+                <div class="thumb" style="background-image: url('./assets/img/song1.jpg')"></div>
+                <div class="body">
+                    <h3 class="title">Music name</h3>
+                    <p class="author">Singer / band</p>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-ellipsis"></i>
+                    <ul class="option__menu">
+                        <li class="option__item">Remove this song</li>
+                        <li class="option__item">Remove this song</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__about">
+                <p class="footer__text">Made by Anh Tú </p>
+
+                <img src="./assets/img/favicon.jpg" alt="" class="footer__img">
+            </div>
+            <div class="footer__social">
+                <a href="" class="footer__social-link">
+                    <i class="fa-brands fa-github footer__social-icon"></i>
+                </a>
+                <a href="" class="footer__social-link">
+                    <i class="fa-brands fa-facebook footer__social-icon"></i>
+                </a>
+                <a href="" class="footer__social-link">
+                    <i class="fa-brands fa-instagram footer__social-icon"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/me.js"></script>
+</body>
+
+</html>
